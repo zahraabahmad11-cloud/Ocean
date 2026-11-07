@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Animals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Ocean Life Logo">
+        </a>
+        <button class="menu-button" id="menuButton" aria-label="Open navagation" aria-expanded="false">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="animals.html">Ocean Animals</a>
+            <a href="zones.html">Ocean Zones</a>
+            <a href="oceanProtectIdea.html">My Innovation</a>
+            <a href="quiz.html" class="active">Ocean Quiz</a>
+        </nav>
+    </header>
+    <section class="quiz-section">
+        <h1>Ocean Knowledge Quiz</h1>
+        <p>Test what you have learned!</p>
+        <div class="question" id="q1" data-answer="b">
+            <h3>1.Which ocean zone receives the most sunlight?</h3>
+            <div class="answer" onclick="selectAnswer(this, 'q1')">A.Midnight Zone</div>
+            <div class="answer" onclick="selectAnswer(this, 'q1')" data-choice="b">B.Sunlight Zone</div>
+            <div class="answer" onclick="selectAnswer(this, 'q1')">C.Abyssal Zone</div>
+        </div>
+        <div class="question" id="q2" data-answer="c">
+            <h3>2. How many arms does an octopus have?</h3>
+            <div class="answer" onclick="selectAnswer(this, 'q2')">A. Six</div>
+            <div class="answer" onclick="selectAnswer(this, 'q2')">B. Ten</div>
+            <div class="answer" onclick="selectAnswer(this, 'q2')" data-choice="c">C. Eight</div>
+        </div>
+        <div class="question" id="q3" data-answer="a">
+            <h3>3. What is a danger of ocean pollution?</h3>
+            <div class="answer" onclick="selectAnswer(this, 'q3')" data-choice="a">A. It harms marine animals</div>
+            <div class="answer" onclick="selectAnswer(this, 'q3')">B. It makes the ocean healthier</div>
+            <div class="answer" onclick="selectAnswer(this, 'q3')">C. It creates more oxygen</div>
+        </div>
+        <div class="question" id="q4" data-answer="b">
+            <h3>4. Which animal has a transparent body and tentacles?</h3>
+            <div class="answer" onclick="selectAnswer(this, 'q4')">A. Sea turtle</div>
+            <div class="answer" onclick="selectAnswer(this, 'q4')" data-choice="b">B. Jellyfish</div>
+            <div class="answer" onclick="selectAnswer(this, 'q4')">C. Clownfish</div>
+        </div>
+        <button onclick="checkAnswer()">Check Answers</button>
+        <h2 id="result"></h2>
+    </section>
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">Ocean Life</a>
+        <p>Discover, understand, and protect our oceans.</p>
+        <p class="ftr"> ZAHRAA | 2026</p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
